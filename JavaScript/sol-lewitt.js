@@ -135,4 +135,10 @@ function setup() {
   while (dlBR <= width) {
     line(
       dlBR, topBR,
-      d
+      dlBR + (bottomBR - topBR), bottomBR
+    );
+    dlBR += spacingBR;
+  }
+
+  pop();
+}
